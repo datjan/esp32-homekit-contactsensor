@@ -1,6 +1,10 @@
 # esp32-homekit-contactsensor
 This is a native HomeKit contact sensor with ESP32 based on potential free contacts.
 
+
+![alt text](https://github.com/datjan/esp32-homekit-contactsensor/blob/main/homekit-example.png?raw=true)
+
+
 ## Hardware
 The following hardware is required:
 ```
