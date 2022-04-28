@@ -41,7 +41,7 @@ Following files needs to be uploaded to the ESP32
 ```
 esp32-homekit-contactsensor.ino
 DEV_Identify.h
-DEV_SecuritySystems.h
+DEV_ContactSensors.h
 ```
 
 ## Setup
