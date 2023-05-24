@@ -1,5 +1,6 @@
 # esp32-homekit-contactsensor
 This is a native HomeKit contact sensor with ESP32 based on potential free contacts.
+It is working with the old and new HomeKit-Architecture (Changes in 2022/2023)
 
 
 ![alt text](https://github.com/datjan/esp32-homekit-contactsensor/blob/main/homekit-example.png?raw=true)
@@ -33,7 +34,12 @@ Arduino
 
 Following libraries are required
 ```
-https://github.com/datjan/HomeSpan  (fork from https://github.com/HomeSpan/HomeSpan)
+https://github.com/HomeSpan/HomeSpan
+```
+
+Following Arduino->Tools settings should be used
+```
+Partition Scheme: Default 4MB with ffat
 ```
 
 ## Upload to device
@@ -45,7 +51,7 @@ DEV_ContactSensors.h
 ```
 
 ## Setup
-Setup via Arduino serial monitor.
+Setup via Arduino serial monitor (115200 baud).
 
 Configuration HomeKit code (123-55-222)
 ```
@@ -57,5 +63,7 @@ Configuration Wifi connection
 W
 ```
 
+In case of the ESP32 ist restarting/showing errors after doing some commands, try to disconnect the power source and boot it again.
+
 ## Add device to Homekit
-The device can be added to homekit like every other homekit device.
+The device can be added to homekit like every other homekit device, but with the help of the other devices search in home app.
